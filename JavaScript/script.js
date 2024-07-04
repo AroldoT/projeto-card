@@ -8,6 +8,17 @@ divCimg.addEventListener ('click', () => {
   divTexto.classList.toggle('sumir')
 })
 
+divCimg.addEventListener('mouseover', () => {
+  divCimg.style.transform = 'scale(1.3)';
+  divCimg.style.transition = 'transform 0.7s linear';
+})
+
+divCimg.addEventListener('mouseout', () => {
+  divCimg.style.transform = 'scale(1.0)';
+  divCimg.style.transition = 'transform 0.7s linear';
+
+})
+
 imgOlho.addEventListener('click', () => {
   divCimg.classList.add('sumir')
   imgOlho.classList.add('sumir')
